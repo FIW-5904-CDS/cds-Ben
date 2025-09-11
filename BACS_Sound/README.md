@@ -1,72 +1,216 @@
-# Project Survey Form
+\# Project Summary
 
-**Name:** Ben Stalheim  
-**Date:** September 8th, 2025  
 
----
 
-## Project Description
-The objective of this project is to estimate the abundance of Bachman's Sparrows using passive acoustic monitoring. Individuals were recorded at known distances, and now a model is being built to predict the distance to recorded birds of unknown distance. Distance sampling methods will be used to quantify abundance.
+\*\*Name:\*\* Ben Stalheim  
 
----
+\*\*Date:\*\* September 8th, 2025  
 
-## 1. General Info
-- **Proposed Title:** Using Passive Acoustic Monitoring to Measure Abundance in Bachman’s Sparrows  
-- **Likely Coauthors:** Elizabeth Hunter  
-- **Proposed Journal (1st choice):** *TBD*  
-- **Proposed Journal (backup):** *TBD*  
 
----
 
-## 2. Overarching Question
-How does mining reclamation influence abundance of bird species?
+\## Project Overview
+
+
+
+The objective of this project is to estimate the abundance of Bachman's Sparrows using passive acoustic monitoring. Individuals were recorded at known distances, and a model is being developed to predict the distance to birds recorded at unknown distances. Distance sampling methods will be used to quantify abundance.
+
+
 
 ---
 
-## 3. Why This is Important
-1. Reclaimed mine land is mimicking disturbed habitats  
-2. ARUs have not been used to model abundance  
-3. Bachman’s Sparrows are a species of concern  
-4. Land is a scarce resource: are mine lands a source, sink, or new open habitats?  
+
+
+\## 1. General Info
+
+
+
+\- \*\*Proposed Title:\*\* \*Using Passive Acoustic Monitoring to Measure Abundance in Bachman’s Sparrows\*  
+
+\- \*\*Likely Coauthor:\*\* Elizabeth Hunter  
+
+\- \*\*Proposed Journal (1st choice):\*\* \*TBD – suggestions welcome\*  
+
+\- \*\*Proposed Journal (backup):\*\* \*Also TBD\*
+
+
 
 ---
 
-## 4. Objectives
-- Create a model to estimate distance based on recorded sound levels of Bachman’s Sparrows  
-- Use the model to predict distance to birds recorded using ARUs at multiple locations and apply distance sampling methods to measure abundance  
-- Model changes in abundance at the mine reclamation sites and study control areas  
+
+
+\## 2. Overarching Question
+
+
+
+\*\*How does mining reclamation influence the abundance of bird species?\*\*
+
+
 
 ---
 
-## 5. Study Context
-- **Location:** Southeastern Georgia — Mission Mine, Okefenokee National Wildlife Refuge, and Sansavilla Wildlife Management Area  
-- **Focal Species:** Bachman’s Sparrow  
-- **Approaches:** Passive acoustic monitoring, vegetation surveys, point counts, banding, etc.  
+
+
+\## 3. Why This Matters
+
+
+
+1\. Reclaimed mine land may mimic disturbed habitats.  
+
+2\. ARUs have not been widely used to model abundance.  
+
+3\. Bachman’s Sparrows are a species of conservation concern.  
+
+4\. Land is a scarce resource—are mine lands ecological sinks or viable open habitats?
+
+
 
 ---
 
-## 6–12. Analysis Plan
-- Each row of data in my dataset is a **recording**
 
 
-## Repository Structure
+\## 4. Project Objectives
 
-### `data/`
-This directory stores the raw and processed data files.  
 
-The dataset included here is a joined CSV file where each row pertains to a unique recording. Pertinent columns are:  
-- Distance to the bird  
-- Maximum RMS (amplitude of the recorded sound)  
-- BirdNET confidence score  
 
-### `R/`
-This directory stores all of the scripts to analyze the data.  
+\- Develop a model to estimate distance based on recorded sound levels of Bachman’s Sparrows.  
 
-Scripts are modular, with each script handling a different task, such as:  
-- Extracting loudness  
-- Cleaning the data  
-- Visualization  
-- Modeling  
+\- Use the model to predict distances to birds recorded via ARUs across multiple locations and apply distance sampling methods to estimate abundance.  
 
-### `maps/`
-This directory stores all of the maps and figures associated with this project.
+\- Model changes in abundance at mine reclamation sites versus control areas.
+
+
+
+---
+
+
+
+\## 5. Study Design
+
+
+
+\- \*\*Location:\*\* Southeastern Georgia  
+
+&nbsp; - Mission Mine  
+
+&nbsp; - Okefenokee National Wildlife Refuge  
+
+&nbsp; - Sansavilla Wildlife Management Area  
+
+\- \*\*Focal Species/System:\*\* Bachman’s Sparrow  
+
+\- \*\*Approaches:\*\*  
+
+&nbsp; - Passive acoustic monitoring  
+
+&nbsp; - Vegetation surveys  
+
+&nbsp; - Point counts  
+
+&nbsp; - Banding  
+
+
+
+---
+
+
+
+\## 6.
+
+\*\*Unit of Analysis:\*\* Each row in the dataset represents a unique recording.  
+
+
+
+\## 7.
+
+\*\*For my analysis, I want to test:\*\* If sound levels can be modeled to predict distances.
+
+
+
+\## 8.
+
+&nbsp;\*\*Response Variable (Y-axis):\*\* Sound level (RMS, dBFS, or dB)  
+
+
+
+\## 9.
+
+&nbsp;\*\*Predictor Variables (X-axis / Graph aesthetics):\*\*  
+
+&nbsp; - Distance  
+
+&nbsp; - Height  
+
+&nbsp; - Directionality  
+
+&nbsp; - Ambient sound pressure level  
+
+\## 10.
+
+\*\*Replication:\*\* Across multiple study areas and monitoring points.
+
+
+
+\## 11.
+
+\*\*Planned Analysis:\*\* Regression modeling  
+
+
+
+\## 12.
+
+\*\*Expected Output:\*\* Final figures visualizing predicted distances and abundance estimates
+
+
+
+---
+
+
+
+\## Directory Structure
+
+
+
+\### `data/`  
+
+Stores raw and processed data files.  
+
+\- Dataset is a joined CSV file  
+
+\- Each row = one recording  
+
+\- Key columns:  
+
+&nbsp; - Distance to bird  
+
+&nbsp; - Maximum RMS amplitude  
+
+&nbsp; - BirdNET confidence score  
+
+
+
+\### `R/`  
+
+Contains all analysis scripts.  
+
+\- Modular scripts for:  
+
+&nbsp; - Loudness extraction  
+
+&nbsp; - Data cleaning  
+
+&nbsp; - Visualization  
+
+&nbsp; - Modeling  
+
+
+
+\### `maps/`  
+
+Stores all maps and figures associated with the project.
+
+
+
+---
+
+
+
