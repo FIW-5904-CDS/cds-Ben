@@ -3,11 +3,11 @@
 ###########################################
 
 #### Required Packages ----
-
+library(usethis)
 #### Setting Working Directory ---- 
 rm(list = ls())
 
-setwd("C:/cygwin64/home/benst/cds-Ben/BACS_Sound")
+# setwd("C:/cygwin64/home/benst/cds-Ben/BACS_Sound")
 
 #### Playing Around ----
 abc <- c("a", "b", "c")
